@@ -7,9 +7,7 @@ option java_outer_classname = "Studnet";
 option java_multiple_files = true;
 
 service StudentService {
-    rpc GetRealNameByUsername(MyRequest) returns (MyResponse) {
-
-    }
+    rpc GetRealNameByUsername(MyRequest) returns (MyResponse) {}
 }
 
 message MyRequest {

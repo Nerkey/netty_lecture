@@ -42,9 +42,12 @@ protobuf {
             artifact = 'io.grpc:protoc-gen-grpc-java:1.6.1'
         }
     }
+
     generateProtoTasks {
         all()*.plugins {
-            grpc {}
+            grpc {
+//                outputSubDir = 'heiheihei'
+            }
         }
     }
 }
