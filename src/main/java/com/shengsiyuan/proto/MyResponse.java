@@ -18,7 +18,7 @@ public  final class MyResponse extends
     realname_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -44,7 +44,7 @@ public  final class MyResponse extends
             break;
           }
           case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             realname_ = s;
             break;
@@ -62,29 +62,29 @@ public  final class MyResponse extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.shengsiyuan.proto.Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
+    return Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.shengsiyuan.proto.Studnet.internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable
+    return Studnet.internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.shengsiyuan.proto.MyResponse.class, com.shengsiyuan.proto.MyResponse.Builder.class);
+            MyResponse.class, Builder.class);
   }
 
   public static final int REALNAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object realname_;
+  private volatile Object realname_;
   /**
    * <code>string realname = 1;</code>
    */
-  public java.lang.String getRealname() {
-    java.lang.Object ref = realname_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getRealname() {
+    Object ref = realname_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       realname_ = s;
       return s;
     }
@@ -94,11 +94,11 @@ public  final class MyResponse extends
    */
   public com.google.protobuf.ByteString
       getRealnameBytes() {
-    java.lang.Object ref = realname_;
-    if (ref instanceof java.lang.String) {
+    Object ref = realname_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       realname_ = b;
       return b;
     } else {
@@ -136,15 +136,15 @@ public  final class MyResponse extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.shengsiyuan.proto.MyResponse)) {
+    if (!(obj instanceof MyResponse)) {
       return super.equals(obj);
     }
-    com.shengsiyuan.proto.MyResponse other = (com.shengsiyuan.proto.MyResponse) obj;
+    MyResponse other = (MyResponse) obj;
 
     boolean result = true;
     result = result && getRealname()
@@ -152,7 +152,7 @@ public  final class MyResponse extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -166,69 +166,69 @@ public  final class MyResponse extends
     return hash;
   }
 
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(byte[] data)
+  public static MyResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(java.io.InputStream input)
+  public static MyResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.shengsiyuan.proto.MyResponse parseDelimitedFrom(java.io.InputStream input)
+  public static MyResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.shengsiyuan.proto.MyResponse parseDelimitedFrom(
+  public static MyResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.shengsiyuan.proto.MyResponse parseFrom(
+  public static MyResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -240,7 +240,7 @@ public  final class MyResponse extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.shengsiyuan.proto.MyResponse prototype) {
+  public static Builder newBuilder(MyResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -248,9 +248,9 @@ public  final class MyResponse extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -260,17 +260,17 @@ public  final class MyResponse extends
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:com.shengsiyuan.proto.MyResponse)
-      com.shengsiyuan.proto.MyResponseOrBuilder {
+      MyResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.shengsiyuan.proto.Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
+      return Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.shengsiyuan.proto.Studnet.internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable
+      return Studnet.internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.shengsiyuan.proto.MyResponse.class, com.shengsiyuan.proto.MyResponse.Builder.class);
+              MyResponse.class, Builder.class);
     }
 
     // Construct using com.shengsiyuan.proto.MyResponse.newBuilder()
@@ -279,7 +279,7 @@ public  final class MyResponse extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -297,23 +297,23 @@ public  final class MyResponse extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.shengsiyuan.proto.Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
+      return Studnet.internal_static_com_shengsiyuan_proto_MyResponse_descriptor;
     }
 
-    public com.shengsiyuan.proto.MyResponse getDefaultInstanceForType() {
-      return com.shengsiyuan.proto.MyResponse.getDefaultInstance();
+    public MyResponse getDefaultInstanceForType() {
+      return MyResponse.getDefaultInstance();
     }
 
-    public com.shengsiyuan.proto.MyResponse build() {
-      com.shengsiyuan.proto.MyResponse result = buildPartial();
+    public MyResponse build() {
+      MyResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.shengsiyuan.proto.MyResponse buildPartial() {
-      com.shengsiyuan.proto.MyResponse result = new com.shengsiyuan.proto.MyResponse(this);
+    public MyResponse buildPartial() {
+      MyResponse result = new MyResponse(this);
       result.realname_ = realname_;
       onBuilt();
       return result;
@@ -346,16 +346,16 @@ public  final class MyResponse extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.shengsiyuan.proto.MyResponse) {
-        return mergeFrom((com.shengsiyuan.proto.MyResponse)other);
+      if (other instanceof MyResponse) {
+        return mergeFrom((MyResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.shengsiyuan.proto.MyResponse other) {
-      if (other == com.shengsiyuan.proto.MyResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(MyResponse other) {
+      if (other == MyResponse.getDefaultInstance()) return this;
       if (!other.getRealname().isEmpty()) {
         realname_ = other.realname_;
         onChanged();
@@ -372,11 +372,11 @@ public  final class MyResponse extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.shengsiyuan.proto.MyResponse parsedMessage = null;
+      MyResponse parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.shengsiyuan.proto.MyResponse) e.getUnfinishedMessage();
+        parsedMessage = (MyResponse) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -386,20 +386,20 @@ public  final class MyResponse extends
       return this;
     }
 
-    private java.lang.Object realname_ = "";
+    private Object realname_ = "";
     /**
      * <code>string realname = 1;</code>
      */
-    public java.lang.String getRealname() {
-      java.lang.Object ref = realname_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getRealname() {
+      Object ref = realname_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         realname_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -407,11 +407,11 @@ public  final class MyResponse extends
      */
     public com.google.protobuf.ByteString
         getRealnameBytes() {
-      java.lang.Object ref = realname_;
+      Object ref = realname_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         realname_ = b;
         return b;
       } else {
@@ -422,7 +422,7 @@ public  final class MyResponse extends
      * <code>string realname = 1;</code>
      */
     public Builder setRealname(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -469,12 +469,12 @@ public  final class MyResponse extends
   }
 
   // @@protoc_insertion_point(class_scope:com.shengsiyuan.proto.MyResponse)
-  private static final com.shengsiyuan.proto.MyResponse DEFAULT_INSTANCE;
+  private static final MyResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.shengsiyuan.proto.MyResponse();
+    DEFAULT_INSTANCE = new MyResponse();
   }
 
-  public static com.shengsiyuan.proto.MyResponse getDefaultInstance() {
+  public static MyResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -492,12 +492,12 @@ public  final class MyResponse extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MyResponse> getParserForType() {
     return PARSER;
   }
 
-  public com.shengsiyuan.proto.MyResponse getDefaultInstanceForType() {
+  public MyResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

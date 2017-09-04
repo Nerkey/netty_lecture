@@ -24,6 +24,16 @@ public final class Studnet {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_shengsiyuan_proto_StudentRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_shengsiyuan_proto_StudentRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_shengsiyuan_proto_StudentResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_shengsiyuan_proto_StudentResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -32,14 +42,19 @@ public final class Studnet {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\rStudent.proto\022\025com.shengsiyuan.proto\"\035" +
       "\n\tMyRequest\022\020\n\010username\030\001 \001(\t\"\036\n\nMyRespo" +
-      "nse\022\020\n\010realname\030\001 \001(\t2p\n\016StudentService\022" +
-      "^\n\025GetRealNameByUsername\022 .com.shengsiyu" +
-      "an.proto.MyRequest\032!.com.shengsiyuan.pro" +
-      "to.MyResponse\"\000B\"\n\025com.shengsiyuan.proto" +
-      "B\007StudnetP\001b\006proto3"
+      "nse\022\020\n\010realname\030\001 \001(\t\"\035\n\016StudentRequest\022" +
+      "\013\n\003age\030\001 \001(\005\":\n\017StudentResponse\022\014\n\004name\030" +
+      "\001 \001(\t\022\013\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t2\327\001\n\016Stu" +
+      "dentService\022^\n\025GetRealNameByUsername\022 .c" +
+      "om.shengsiyuan.proto.MyRequest\032!.com.she" +
+      "ngsiyuan.proto.MyResponse\"\000\022e\n\020GetStuden" +
+      "tsByAge\022%.com.shengsiyuan.proto.StudentR" +
+      "equest\032&.com.shengsiyuan.proto.StudentRe",
+      "sponse\"\0000\001B\"\n\025com.shengsiyuan.protoB\007Stu" +
+      "dnetP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -58,13 +73,25 @@ public final class Studnet {
     internal_static_com_shengsiyuan_proto_MyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_shengsiyuan_proto_MyRequest_descriptor,
-        new java.lang.String[] { "Username", });
+        new String[] { "Username", });
     internal_static_com_shengsiyuan_proto_MyResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_com_shengsiyuan_proto_MyResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_shengsiyuan_proto_MyResponse_descriptor,
-        new java.lang.String[] { "Realname", });
+        new String[] { "Realname", });
+    internal_static_com_shengsiyuan_proto_StudentRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_shengsiyuan_proto_StudentRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_shengsiyuan_proto_StudentRequest_descriptor,
+        new String[] { "Age", });
+    internal_static_com_shengsiyuan_proto_StudentResponse_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_shengsiyuan_proto_StudentResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_shengsiyuan_proto_StudentResponse_descriptor,
+        new String[] { "Name", "Age", "City", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
