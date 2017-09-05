@@ -337,7 +337,7 @@ public  final class StudentResponse extends
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:com.shengsiyuan.proto.StudentResponse)
-      com.shengsiyuan.proto.StudentResponseOrBuilder {
+      StudentResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return Studnet.internal_static_com_shengsiyuan_proto_StudentResponse_descriptor;

@@ -34,6 +34,11 @@ public final class Studnet {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_shengsiyuan_proto_StudentResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_shengsiyuan_proto_StudentResponseList_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_shengsiyuan_proto_StudentResponseList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -47,14 +52,19 @@ public final class Studnet {
       "\n\tMyRequest\022\020\n\010username\030\001 \001(\t\"\036\n\nMyRespo" +
       "nse\022\020\n\010realname\030\001 \001(\t\"\035\n\016StudentRequest\022" +
       "\013\n\003age\030\001 \001(\005\":\n\017StudentResponse\022\014\n\004name\030" +
-      "\001 \001(\t\022\013\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t2\327\001\n\016Stu" +
-      "dentService\022^\n\025GetRealNameByUsername\022 .c" +
-      "om.shengsiyuan.proto.MyRequest\032!.com.she" +
-      "ngsiyuan.proto.MyResponse\"\000\022e\n\020GetStuden" +
-      "tsByAge\022%.com.shengsiyuan.proto.StudentR" +
-      "equest\032&.com.shengsiyuan.proto.StudentRe",
-      "sponse\"\0000\001B\"\n\025com.shengsiyuan.protoB\007Stu" +
-      "dnetP\001b\006proto3"
+      "\001 \001(\t\022\013\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t\"V\n\023Stud" +
+      "entResponseList\022?\n\017studentResponse\030\001 \003(\013" +
+      "2&.com.shengsiyuan.proto.StudentResponse" +
+      "2\312\002\n\016StudentService\022^\n\025GetRealNameByUser" +
+      "name\022 .com.shengsiyuan.proto.MyRequest\032!" +
+      ".com.shengsiyuan.proto.MyResponse\"\000\022e\n\020G",
+      "etStudentsByAge\022%.com.shengsiyuan.proto." +
+      "StudentRequest\032&.com.shengsiyuan.proto.S" +
+      "tudentResponse\"\0000\001\022q\n\030GetStudentsWrapper" +
+      "ByAges\022%.com.shengsiyuan.proto.StudentRe" +
+      "quest\032*.com.shengsiyuan.proto.StudentRes" +
+      "ponseList\"\000(\001B\"\n\025com.shengsiyuan.protoB\007" +
+      "StudnetP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -92,6 +102,12 @@ public final class Studnet {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_shengsiyuan_proto_StudentResponse_descriptor,
         new String[] { "Name", "Age", "City", });
+    internal_static_com_shengsiyuan_proto_StudentResponseList_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_com_shengsiyuan_proto_StudentResponseList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_shengsiyuan_proto_StudentResponseList_descriptor,
+        new String[] { "StudentResponse", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
