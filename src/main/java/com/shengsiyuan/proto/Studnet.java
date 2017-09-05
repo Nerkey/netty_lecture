@@ -39,6 +39,16 @@ public final class Studnet {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_shengsiyuan_proto_StudentResponseList_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_shengsiyuan_proto_StreamRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_shengsiyuan_proto_StreamRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_shengsiyuan_proto_StreamResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_shengsiyuan_proto_StreamResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -55,16 +65,20 @@ public final class Studnet {
       "\001 \001(\t\022\013\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t\"V\n\023Stud" +
       "entResponseList\022?\n\017studentResponse\030\001 \003(\013" +
       "2&.com.shengsiyuan.proto.StudentResponse" +
-      "2\312\002\n\016StudentService\022^\n\025GetRealNameByUser" +
+      "\"%\n\rStreamRequest\022\024\n\014request_info\030\001 \001(\t\"" +
+      "\'\n\016StreamResponse\022\025\n\rresponse_info\030\001 \001(\t" +
+      "2\247\003\n\016StudentService\022^\n\025GetRealNameByUser",
       "name\022 .com.shengsiyuan.proto.MyRequest\032!" +
-      ".com.shengsiyuan.proto.MyResponse\"\000\022e\n\020G",
+      ".com.shengsiyuan.proto.MyResponse\"\000\022e\n\020G" +
       "etStudentsByAge\022%.com.shengsiyuan.proto." +
       "StudentRequest\032&.com.shengsiyuan.proto.S" +
       "tudentResponse\"\0000\001\022q\n\030GetStudentsWrapper" +
       "ByAges\022%.com.shengsiyuan.proto.StudentRe" +
       "quest\032*.com.shengsiyuan.proto.StudentRes" +
-      "ponseList\"\000(\001B\"\n\025com.shengsiyuan.protoB\007" +
-      "StudnetP\001b\006proto3"
+      "ponseList\"\000(\001\022[\n\006BiTalk\022$.com.shengsiyua" +
+      "n.proto.StreamRequest\032%.com.shengsiyuan." +
+      "proto.StreamResponse\"\000(\0010\001B\"\n\025com.shengs",
+      "iyuan.protoB\007StudnetP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -108,6 +122,18 @@ public final class Studnet {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_shengsiyuan_proto_StudentResponseList_descriptor,
         new String[] { "StudentResponse", });
+    internal_static_com_shengsiyuan_proto_StreamRequest_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_com_shengsiyuan_proto_StreamRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_shengsiyuan_proto_StreamRequest_descriptor,
+        new String[] { "RequestInfo", });
+    internal_static_com_shengsiyuan_proto_StreamResponse_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_com_shengsiyuan_proto_StreamResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_shengsiyuan_proto_StreamResponse_descriptor,
+        new String[] { "ResponseInfo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
