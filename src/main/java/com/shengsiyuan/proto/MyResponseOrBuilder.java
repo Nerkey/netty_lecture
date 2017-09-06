@@ -10,7 +10,7 @@ public interface MyResponseOrBuilder extends
   /**
    * <code>string realname = 1;</code>
    */
-  String getRealname();
+  java.lang.String getRealname();
   /**
    * <code>string realname = 1;</code>
    */
