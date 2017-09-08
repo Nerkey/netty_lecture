@@ -24,11 +24,11 @@ public class GrpcClient {
                 .build();
         StudentServiceGrpc.StudentServiceBlockingStub blockingStub = StudentServiceGrpc.newBlockingStub(managedChannel);
         StudentServiceGrpc.StudentServiceStub asyncStub = StudentServiceGrpc.newStub(managedChannel);
-//        MyResponse myResponse = blockingStub.getRealNameByUsername(MyRequest.newBuilder().setUsername("zhangsan").build());
-//        System.out.println(myResponse.getRealname());
-//
-//        System.out.println("-------------------------");
-//
+        MyResponse myResponse = blockingStub.getRealNameByUsername(MyRequest.newBuilder().setUsername("zhangsan").build());
+        System.out.println(myResponse.getRealname());
+
+        System.out.println("-------------------------");
+
 //        Iterator<StudentResponse> studentsByAge = blockingStub.getStudentsByAge(StudentRequest.newBuilder().setAge(20).build());
 //
 //        studentsByAge.forEachRemaining(item -> {
@@ -66,32 +66,32 @@ public class GrpcClient {
 //        studentRequestStreamObserver.onCompleted();
 //
 
-        StreamObserver<StreamRequest> requestStreamObserver = asyncStub.biTalk(new StreamObserver<StreamResponse>() {
-            @Override
-            public void onNext(StreamResponse value) {
-                System.out.println(value.getResponseInfo());
-            }
-
-            @Override
-            public void onError(Throwable t) {
-                System.out.println(t.getMessage());
-            }
-
-            @Override
-            public void onCompleted() {
-                System.out.println("onCompleted");
-            }
-        });
-
-        for (int i = 0; i < 5; i++) {
-            requestStreamObserver.onNext(StreamRequest.newBuilder().setRequestInfo(LocalDateTime.now().toString()).build());
-
-            Thread.sleep(1000);
-        }
-
-
-
-        Thread.sleep(50000);
+//        StreamObserver<StreamRequest> requestStreamObserver = asyncStub.biTalk(new StreamObserver<StreamResponse>() {
+//            @Override
+//            public void onNext(StreamResponse value) {
+//                System.out.println(value.getResponseInfo());
+//            }
+//
+//            @Override
+//            public void onError(Throwable t) {
+//                System.out.println(t.getMessage());
+//            }
+//
+//            @Override
+//            public void onCompleted() {
+//                System.out.println("onCompleted");
+//            }
+//        });
+//
+//        for (int i = 0; i < 5; i++) {
+//            requestStreamObserver.onNext(StreamRequest.newBuilder().setRequestInfo(LocalDateTime.now().toString()).build());
+//
+//            Thread.sleep(1000);
+//        }
+//
+//
+//
+//        Thread.sleep(50000);
 
 //        managedChannel.shutdown().awaitTermination(5, TimeUnit.MINUTES);
 
