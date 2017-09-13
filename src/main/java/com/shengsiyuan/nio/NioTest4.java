@@ -21,7 +21,7 @@ public class NioTest4 {
         ByteBuffer buffer = ByteBuffer.allocate(512);
 
         while (true) {
-//            buffer.clear();
+            buffer.clear();
 
             int read = inputChannel.read(buffer);
 
