@@ -45,6 +45,8 @@ public class NioTest13 {
         CharBuffer charBuffer = decoder.decode(inputData);
 
         ByteBuffer outputData = encoder.encode(charBuffer);
+//
+//        ByteBuffer outputData = Charset.forName("utf8").encode(charBuffer);
 
         outputFileChannel.write(outputData);
 
