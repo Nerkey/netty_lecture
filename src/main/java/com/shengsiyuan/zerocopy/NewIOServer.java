@@ -22,7 +22,6 @@ public class NewIOServer {
             SocketChannel socketChannel = serverSocketChannel.accept();
             socketChannel.configureBlocking(true);
 
-
             int readCount = 0;
 
             while (-1 != readCount) {
@@ -31,8 +30,7 @@ public class NewIOServer {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-
-                byteBuffer.rewind();
+                byteBuffer.clear();
             }
         }
 
